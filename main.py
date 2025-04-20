@@ -1,11 +1,11 @@
 import matplotlib.pyplot as plt
-import random
+import random2 as randm  # Use random2 for Python 2 compatibility
 import os
 
 # Generate random data
 categories = ['Cat', 'Dog']
 days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-data = {category: [random.randint(5, 20) for _ in days] for category in categories}
+data = {category: [randm.randint(5, 20) for _ in days] for category in categories}
 
 # Bar Chart
 plt.figure(figsize=(10, 5))
